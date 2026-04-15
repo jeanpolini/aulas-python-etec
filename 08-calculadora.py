@@ -3,34 +3,46 @@ os.system("cls")
 
 print("atividade - calculadora")
 
-numero01 = float(input("digite o primeiro numero:"))
-numero02 = float(input("digite o segundo numero:"))
+continuar = "sim"
 
-print("escolha uma das operações")
 
-print("+ - adição")
-print("- - subtração")
-print("* - multiplicação")
-print("/ - divisão")
+while(continuar == "sim"):
 
-operacao = input("informe a operação:")
 
-if(operacao == "+"):
-    resultado = numero01 + numero02
+    numero01 = float(input("digite o primeiro numero:"))
+    numero02 = float(input("digite o segundo numero:"))
 
-elif(operacao == "-"):
-    resultado = numero01 - numero02
+    print("escolha uma das operações")
 
-elif(operacao == "*"):
-    resultado = numero01 * numero02
+    print("+ - adição")
+    print("- - subtração")
+    print("* - multiplicação")
+    print("/ - divisão")
+    print("[0] - sair")
 
-elif(operacao =="/"):
-    resultado = numero01 / numero02   
-else:
-    print("operação invalida!") 
+    operacao = input("informe a operação:")
 
-print("=" * 30)    
-print(f"operação escolhida: {operacao}")
-print(f"resultado: {resultado}")
+    if(operacao == "+"):
+        resultado = numero01 + numero02
+
+    elif(operacao == "-"):
+        resultado = numero01 - numero02
+
+    elif(operacao == "*"):
+        resultado = numero01 * numero02
+
+    elif(operacao =="/"):
+        resultado = numero01 / numero02   
+
+    elif(operacao =="0"):
+        continuar = "nao"
+        exit()
+            
+    else:
+        print("operação invalida!") 
+
+    print("=" * 30)    
+    print(f"operação escolhida: {operacao}")
+    print(f"resultado: {resultado}")
 
 

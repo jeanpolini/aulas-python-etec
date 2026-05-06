@@ -17,6 +17,7 @@ continuar = True
 
 
 print("exercicio caixa eletronico.")
+
 while(continuar == True):
 
     print("===Menu===")
@@ -56,7 +57,6 @@ while(continuar == True):
         print(f"seu saldo atual é r$ :{saldo_cliente_inicial}")   
     else:
         opcao==4
-  
         continuar == False
         print("sistema encerrado") 
         break

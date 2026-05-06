@@ -34,3 +34,5 @@ elif(opcao ==4):
     #chamar a funçao dividir
     print(f"a divisão é;{funcoes.dividir(numero1,numero2)}")  
 
+else:
+    print("operação invalida!")

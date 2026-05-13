@@ -5,7 +5,10 @@ import os
 def exibir_catalogo(filmes):
     os.system("cls")
     print("=== catalogo de filmes ===")
-    
+    for item in filmes:
+        print (f"titulo: {item['titulo']}")
+        print(f"genero: {item['genero']}")
+        print("-" * 30)
     
 
 #========================

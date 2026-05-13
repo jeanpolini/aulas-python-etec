@@ -53,6 +53,9 @@ def carregar_menu_admin():
             print("filme cadastrado com sucesso")
             input("pressione <enter> para continuar")
 
+        elif(op ==2):
+            exibir_catalogo(filmes)
+            input("pressione <enter> para continuar")
 
         elif(op ==4):
             break
